@@ -26,8 +26,10 @@ namespace WAGC_Check
             client.UseDefaultCredentials = true;
             // client.Credentials = new System.Net.NetworkCredential("user", "Password");
             objeto_mail.From = new MailAddress("datatel@carleton.edu");
-            objeto_mail.To.Add(new MailAddress("colleague-admin@carleton.edu;nweeg@carleton.edu;jkramer@carleton.edu"));
- 
+            objeto_mail.To.Add(new MailAddress("colleague-admin@carleton.edu"));
+            objeto_mail.To.Add(new MailAddress("nweeg@carleton.edu"));
+            objeto_mail.To.Add(new MailAddress("jkramer@carleton.edu"));
+
             if (Udtprocess.Length > 0)
             { 
                 var commandLine = new StringBuilder("Udt");
