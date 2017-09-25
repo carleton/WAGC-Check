@@ -44,7 +44,7 @@ namespace WAGC_Check
                         string cmd = commandLine.ToString();
  
                         // check command line string for active Colleague system process
-                        if (cmd.Contains("DMI_GC_DRIVER"))
+                        if (cmd.Contains("RESTART.DAS.SESSION"))
                         {
                             processFound = true;
                         }
